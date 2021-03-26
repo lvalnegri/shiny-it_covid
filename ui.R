@@ -4,10 +4,10 @@
 
 shinyUI(fluidPage(
     
-    includeCSS(file.path(pub_path, 'styles', 'styles.css')),
-    includeScript(file.path(pub_path, 'scripts', 'scripts.js')),
+    includeCSS(file.path(pub_path, 'styles', 'datamaps.css')),
+#    includeScript(file.path(app_path, 'scripts.js')),
     tags$head(
-        tags$link(rel="shortcut icon", href="icon.ico"),
+        tags$link(rel="shortcut icon", href="favicon.ico"),
         tags$link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.8.1/css/all.css")
     ),
     
@@ -28,7 +28,7 @@ shinyUI(fluidPage(
 #        source(file.path("ui", "ui_crd.R"),  local = TRUE)$value,
 
         # LAST UPDATED AT -----------------------------------------------------
-        text = paste('Ultiomo Aggiornamento:', format(last_updated, '%d %b %Y') )
+        text = paste('Ultimo Aggiornamento:', format(last_updated, '%d %b') )
     
     ),
 
